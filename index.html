@@ -4,8 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
 </head>
+
 <body>
-    
+    <!-- Main Title -->
+    <header class="main-title">
+        <h1>Calculator BMI</h1>
+    </header>
+
+    <main>
+        <!-- Left Content -->
+        <section class="main-content">
+            <!-- Main Article -->
+            <article>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+            </article>
+
+            <!-- Form, border, padding, bgcolor optional -->
+            <section>
+                <form>
+                    <div>
+                        <div class="input-title">Jenis Kelamin</div>
+                        <input type="radio" id="selection-man"><label for="selection-man">Laki-laki</label>
+                        <input type="radio" id="selection-woman"><label for="selection-woman">Perempuan</label>
+                    </div>
+                    <div>
+                        <label for="input-berat-badan">Berat Badan (Kg)</label>
+                        <input type="number" id="input-berat-badan"><br><span id="weight_error"></span>
+                    </div>
+                    <div>
+                        <label for="input-usia">Usia (thn)</label>
+                        <input type="number" id="input-usia">
+                    </div>
+                    <div>
+                        <label for="input-tinggi-badan">Tinggi Badan (cm)</label>
+                        <input type="number" id="input-tinggi-badan"><br><span id="height_error"></span>
+                    </div>
+                    <div>
+                        <button class="button submit" type="button" onclick="updateResult()">Submit BMI</button>
+                        <button class="button reset" type="button">Reset</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Form Article -->
+            <section>
+                <header>
+                    <h2>Keunggulan Fitur</h2>
+                </header>
+
+                <article>
+                    <p> 1. Menghitung berat badan </p>
+                    <p> 2. Menentukan kategori berat badan ideal atau tidak </p>
+                    <p> 3. Mempersiapkan program penurunan berat badan </p>
+                    <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+                    <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.</p>
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <!-- Right Content -->
+        <section class="main-content result-content">
+            <!-- Result Article -->
+            <article>
+                <header>
+                    <h1>Result</h1>
+                </header>
+
+                <!-- Result Section -->
+                <section class="result-section">
+                    <p>Hasil Result Adalah : ...</p>
+
+                    <h2 id="bmi-result">24.7</h2>
+
+                    <p>Anda Memiliki Berat Badan Berlebih...</p>
+                </section>
+
+                <!-- Result Article -->
+                <article></article>
+
+                <!-- General Information -->
+                <section></section>
+            </article>
+
+            <article class="closing">
+                <h3 style="text-align: center;">Kesimpulan</h3>
+                <p>Berat badan mencerminkan gaya hidup kita, mulai dari pola makan, pola istirahat, dan aktivitas kita sehari-hari. Untuk mendapatkan berat badan yang ideal kita harus menyeimbangkan seluruh hal tersebut, karena dengan berat badan ideal dan gaya hidup sehat, maka kita dapat hidup bahagia</p>
+            </article>
+        </section>
+        <section>
+            
+            <article>
+                <p class="playstore" style="display: none;">Download di playstore gratis</p>
+            </article>
+        </section>
+    </main>
+
 </body>
+
 </html>
